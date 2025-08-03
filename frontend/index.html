@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arabic Law LLM Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Arabic Law LLM Assistant</h1>
+        <p class="description">Ask any question related to Arabic law and get an instant answer.</p>
+
+        <div class="input-section">
+            <textarea id="questionInput" placeholder="اكتب سؤالك القانوني هنا... (e.g., ما هو القانون المدني ؟)" rows="4"></textarea>
+            <button id="submitButton" class="button">
+                <span id="buttonText">الحصول على الإجابة</span>
+                <span id="loadingSpinner" class="spinner hidden"></span>
+            </button>
+        </div>
+
+        <div class="output-section">
+            <h2 class="output-title">الإجابة:</h2>
+            <div id="answerOutput" class="answer-box">
+                <p class="placeholder-text">الإجابة ستظهر هنا...</p>
+            </div>
+            <div id="errorMessage" class="error-message hidden">
+                <p>حدث خطأ أثناء الحصول على الإجابة. يرجى المحاولة مرة أخرى.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
