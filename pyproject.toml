@@ -6,10 +6,13 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "accelerate>=1.9.0",
+    "bitsandbytes>=0.46.1",
     "fastapi>=0.116.1",
     "gunicorn>=23.0.0",
+    "huggingface-hub[hf-xet]>=0.34.3",
+    "peft>=0.17.0",
     "pydantic>=2.11.7",
     "torch>=2.7.1",
     "transformers>=4.54.1",
-    "uvicorn>=0.35.0",
+    "uvicorn[standard]>=0.35.0",
 ]
